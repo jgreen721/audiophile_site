@@ -1,0 +1,56 @@
+.zx7-container {
+  height: 32rem;
+  /* width: 100%; */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.zx7-img-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.zx7-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* width: 124.7rem;
+  height: 86.3rem;
+  left: -3rem;
+  top: -50rem; */
+}
+
+.zx7-content-overlay {
+  position: relative;
+  z-index: 5;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zx7-content {
+  height: 16.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.zx7-h1 {
+  position: relative;
+  z-index: 5;
+  /* margin-bottom: ; */
+}
+
+@media screen and (max-width: 550px) {
+  .zx7-img {
+  }
+}

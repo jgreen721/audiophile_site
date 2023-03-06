@@ -1,0 +1,19 @@
+.product-info-container {
+  padding: 7.9rem 16.5rem;
+}
+
+.go-back-btn {
+  color: var(--primarycolor);
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .product-info-container {
+    padding: 3.3rem 4rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .product-info-container {
+    padding: 1.6rem 2rem;
+  }
+}

@@ -1,6 +1,6 @@
 .zx-container {
   height: 56rem;
-  background: var(--tan);
+  background: var(--lightgray);
   /* border: 5px solid green; */
   display: flex;
   align-items: flex-end;
@@ -9,6 +9,16 @@
   overflow: hidden;
   margin-bottom: 4.8rem;
   position: relative;
+}
+
+.turn-tan {
+  animation: turnTan 2s forwards;
+}
+
+@keyframes turnTan {
+  100% {
+    background: var(--tan);
+  }
 }
 
 .svg-circles {
@@ -28,6 +38,7 @@
 .zx-img {
   height: 100%;
   width: 100%;
+  opacity: 0;
 }
 
 .zx-content {
@@ -44,6 +55,21 @@
   margin-top: 2.4rem;
   margin-bottom: 4rem;
   line-height: 2.5rem;
+  opacity: 0;
+}
+
+.zx9-btn {
+  opacity: 0;
+}
+
+.show {
+  animation: showEls 1s var(--i) forwards;
+}
+
+@keyframes showEls {
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1050px) {

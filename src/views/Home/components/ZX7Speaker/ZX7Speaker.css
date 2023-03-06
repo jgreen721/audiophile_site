@@ -10,6 +10,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: 0.3s ease;
 }
 
 .zx7-img {
@@ -18,11 +19,22 @@
   left: 0;
   width: 100%;
   height: 100%;
+  top: 1000px;
 
   /* width: 124.7rem;
   height: 86.3rem;
   left: -3rem;
   top: -50rem; */
+}
+
+.pop-up {
+  animation: pop-up 1s forwards;
+}
+
+@keyframes pop-up {
+  100% {
+    top: 0px;
+  }
 }
 
 .zx7-content-overlay {
@@ -47,10 +59,35 @@
 .zx7-h1 {
   position: relative;
   z-index: 5;
+  transition: 0.5s ease;
+  transform: translateX(-300px);
   /* margin-bottom: ; */
+}
+
+.zx7-btn {
+  transform: translateX(-300px);
+}
+
+.slide-right {
+  animation: slideright var(--i) 1s forwards;
+}
+
+@keyframes slideright {
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .zx7-content {
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .zx7-img {
+  }
+  .zx7-content-overlay {
+    margin-left: 2.4rem;
   }
 }

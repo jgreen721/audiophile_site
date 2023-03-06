@@ -1,7 +1,10 @@
 import React from 'react'
 import "./Hero.css"
+import {Link} from "react-router-dom"
 
 const Hero = () => {
+
+
   return (
     <header className="hero">
               <div className="hero-content-overlay">
@@ -10,7 +13,9 @@ const Hero = () => {
             <p className="hero-blurb"> Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
 </p>
 
+<Link to={`/product_info/xx99-mark-one-headphones`}>
 <button className="btn primary-btn">See Product</button>
+</Link>
         </div>
         <div className="hero-overlay">
 

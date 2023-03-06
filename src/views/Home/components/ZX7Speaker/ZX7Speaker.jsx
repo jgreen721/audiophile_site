@@ -1,21 +1,29 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import {Link} from "react-router-dom"
+import useObserver from '../../../../hooks/useObserver'
 import "./ZX7Speaker.css"
 
 const ZX7Speaker = () => {
+  const zx7Ref = useRef();
+  const {inView} = useObserver(zx7Ref);
+
+
   return (
-    <div className="zx7-container">
+    <div ref={zx7Ref} className="zx7-container">
         <div className="zx7-img-container">
         
             <picture>
       <source media="(min-width:850px)" srcSet="./assets/home/desktop/image-speaker-zx7.jpg"/>
       <source media="(min-width:450px)" srcSet="./assets/home/tablet/image-speaker-zx7.jpg"/>
-      <img className="zx7-img" src="./assets/home/mobile/image-speaker-zx7.jpg" alt="img"/>
+      <img className={inView ? "zx7-img pop-up" : "zx7-img"} src="./assets/home/mobile/image-speaker-zx7.jpg" alt="img"/>
     </picture>
         </div>
         <div className="zx7-content-overlay">
         <div className="zx7-content">
-        <h2 className="zx7-h1">ZX7 Speaker </h2>
-        <button className="btn zx7-btn">See Product</button>
+        <h2 style={{"--i":"0s"}} className={inView ? "zx7-h1 slide-right" : "zx7-h1"}>ZX7 Speaker </h2>
+        <Link to={`/product_info/zx7-speaker`}>
+        <button style={{"--i":".5s"}} className={inView ? "btn zx7-btn outline-btn slide-right" : "btn zx7-btn outline-btn"}>See Product</button>
+        </Link>
         </div>
         </div>
     </div>

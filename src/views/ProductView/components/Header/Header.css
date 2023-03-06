@@ -1,0 +1,13 @@
+.productview-header {
+  display: flex;
+  align-items: Center;
+  justify-content: center;
+  background: var(--secondarybg);
+  /* background: red; */
+  color: var(--secondarycolor);
+  height: 25rem;
+}
+
+.product-header {
+  letter-spacing: 1rem;
+}

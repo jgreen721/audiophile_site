@@ -1,0 +1,19 @@
+.imagecard-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.productcard-img {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.productcard-img:hover {
+  filter: saturate(35);
+  transform: scale(1.2) rotate(3deg);
+}
+
+.productcard-img:hover .content-h2 {
+  color: red;
+}

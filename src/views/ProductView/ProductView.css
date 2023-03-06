@@ -1,0 +1,16 @@
+.products-padding {
+  padding: 0 16.5rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .products-padding {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .products-padding {
+    padding: 0 2rem;
+  }
+}

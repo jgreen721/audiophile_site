@@ -1,0 +1,19 @@
+.recommended-item {
+  margin: 0 1.5rem;
+  /* border: 2px solid blue; */
+  text-align: center;
+}
+
+.rec-img-container {
+  height: 31.8rem;
+}
+
+.rec-img {
+  height: 100%;
+  width: 100%;
+}
+
+.rec-item-header {
+  margin: 3.5rem 0;
+  text-transform: uppercase;
+}

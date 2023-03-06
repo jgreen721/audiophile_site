@@ -20,8 +20,10 @@ function App() {
           <Route path="/product_info/:productname" element={<ProductInfo/>}/>
           <Route path="/:product" element={<ProductView/>}/>
        </Routes>
+       <div className="padding-container">
         <Items/>
         <BringYou/>
+        </div>
         <Footer/>
     </div>
   )

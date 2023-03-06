@@ -67,7 +67,8 @@ a {
   font-family: var(--primaryfont);
 }
 
-.padding-content-container {
+.padding-content-container,
+.padding-container {
   padding: 0 16.5rem;
 }
 
@@ -186,7 +187,8 @@ p {
 }
 
 @media screen and (max-width: 1050px) {
-  .padding-content-container {
+  .padding-content-container,
+  .padding-container {
     padding: 0 4rem;
   }
 
@@ -206,7 +208,8 @@ p {
     font-size: 2.8rem;
     line-height: 3.8rem;
   }
-  .padding-content-container {
+  .padding-content-container,
+  .padding-container {
     padding: 0 2.4rem;
   }
 }

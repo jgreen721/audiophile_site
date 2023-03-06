@@ -16,7 +16,9 @@ const ProductInfo = () => {
   return  productInfo?.name ?
   (
     <div className="product-info-container">
+      <div className="backbtn-div">
         <Link className="go-back-btn" to="/">Go Back</Link>
+      </div>
         <ProductInfoHeader/>
         <div className="features-box-row">
           <div className="features-col">

@@ -1,0 +1,13 @@
+.recommended-container {
+  margin: 16rem 0;
+}
+
+.recommended-header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 6.4rem;
+}
+
+.recommended-list {
+  display: flex;
+}

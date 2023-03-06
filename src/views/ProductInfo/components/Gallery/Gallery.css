@@ -1,0 +1,41 @@
+.gallery-container {
+  height: 59.2rem;
+  display: flex;
+  /* border: 2px solid red; */
+  gap: 3rem;
+  overflow: hidden;
+}
+
+.gallery-col {
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.gallery-row {
+  height: 50%;
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.gallery-img-container,
+.gallery-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .gallery-container {
+    flex-direction: column;
+    height: 75.6rem;
+    gap: 2rem;
+  }
+
+  .gallery-col {
+    width: 100%;
+    gap: 2rem;
+  }
+}

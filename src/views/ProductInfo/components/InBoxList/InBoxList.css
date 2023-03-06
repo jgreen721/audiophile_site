@@ -1,10 +1,12 @@
-.included-items-list {
-  border: 2px dotted blue;
-  height: 100%;
+.included-items-list-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
 }
 
 .included-header {
   margin-bottom: 3.2rem;
+  text-transform: uppercase;
 }
 
 .included-item {
@@ -23,13 +25,23 @@
 
 @media screen and (max-width: 850px) {
   .included-items-list-container {
-    display: flex;
+    flex-direction: row;
     width: 100%;
     margin-top: 12rem;
   }
 
   .included-list-col {
     width: 50%;
-    border: 3px solid green;
+    /* border: 3px solid green; */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .included-items-list-container {
+    flex-direction: column;
+  }
+
+  .included-list-col {
+    width: 100%;
   }
 }

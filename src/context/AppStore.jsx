@@ -67,6 +67,7 @@ export const AppProvider = ({children})=>{
                     let temp = data;
                     temp = temp.filter(t=>t.slug == slug)[0];
                      setProductInfo(temp);
+                     onTop();
 
                 }
 

@@ -7,11 +7,55 @@
   font-size: 1.5rem;
 }
 
+.features-box-row {
+  display: flex;
+  border: 2px solid red;
+  margin: 16rem 0;
+  gap: 5%;
+  /* align-items: center; */
+}
+
+.features-col {
+  max-width: 63.5rem;
+  border: 2px solid blue;
+}
+
+.included-col {
+  /* max-width: 35rem; */
+  border: 2px solid pink;
+}
+
+.included-items-list-container {
+  width: 100%;
+  border: 5px solid orange;
+  height: 300px;
+  display: flex;
+}
+
 @media screen and (max-width: 1050px) {
   .product-info-container {
     padding: 3.3rem 4rem;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .features-box-row {
+    flex-direction: column;
+  }
+
+  .features-col {
+    max-width: none;
+  }
+
+  .features-col {
+    max-width: auto;
+  }
+
+  .included-col {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .product-info-container {
     padding: 1.6rem 2rem;

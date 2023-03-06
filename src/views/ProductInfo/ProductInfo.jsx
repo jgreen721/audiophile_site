@@ -19,8 +19,12 @@ const ProductInfo = () => {
         <Link className="go-back-btn" to="/">Go Back</Link>
         <ProductInfoHeader/>
         <div className="features-box-row">
+          <div className="features-col">
           <Features/>
+          </div>
+          <div className="included-col">
           <InBoxList/>
+          </div>
         </div>
         <Gallery/>
         <Recommended/>

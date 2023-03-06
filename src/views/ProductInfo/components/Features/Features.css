@@ -1,0 +1,10 @@
+.features-card {
+  /* margin: 16rem 0; */
+}
+
+.features-blurb {
+  font-size: 1.5rem;
+  color: var(--lightblack);
+  line-height: 2.5rem;
+  opacity: 75%;
+}

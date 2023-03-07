@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import { useAppContext } from '../../context/AppStore'
 import {Header,ProductItem} from "./components"
 import {Items} from "../Home/components"
+import { motion } from 'framer-motion'
+import { pageVar } from '../../variants'
 import "./ProductView.css"
 
 const ProductView = () => {
@@ -17,7 +19,7 @@ const ProductView = () => {
 
 
   return  (
-    <div className="product-views-container">
+    <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2}}} className="product-views-container">
         <Header product={params.product}/>
         <div className="products-padding">
         <ul className="product-views-list">
@@ -27,7 +29,7 @@ const ProductView = () => {
         </ul>
         {/* <Items/> */}
         </div>
-    </div>
+    </motion.div>
   )
 }
 

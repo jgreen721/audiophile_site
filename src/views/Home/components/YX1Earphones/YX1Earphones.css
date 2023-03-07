@@ -14,6 +14,7 @@
 .yx1-img {
   height: 100%;
   width: 100%;
+  transition: 3s ease;
 }
 
 .gray {
@@ -22,6 +23,7 @@
 
 .yx1-home-content {
   margin: 10rem 9rem;
+  overflow: hidden;
   /* border: 2px solid red; */
 }
 
@@ -29,6 +31,23 @@
   margin-bottom: 3.2rem;
   text-transform: uppercase;
   text-shadow: 1px 1px 22px var(--lightblack);
+  transition: 2s ease;
+  transform: translateY(-15rem);
+}
+
+.slidedown-yx {
+  transform: translateY(0rem);
+}
+
+.slidedown {
+  /* transition: 2s ease;
+  transform: translateY(55rem); */
+  opacity: 0;
+}
+
+.slideup-shop-btn {
+  /* transform: translateY(0rem); */
+  opacity: 1;
 }
 
 @media screen and (max-width: 650px) {

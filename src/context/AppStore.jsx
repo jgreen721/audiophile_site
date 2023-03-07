@@ -12,6 +12,8 @@ export const useAppContext = ()=>useContext(AppContext);
 
 export const AppProvider = ({children})=>{
                 const [appTheme,setAppTheme] = useState("light")
+                const [animate,setAnimate] = useState(true)
+                const [showMobile,setShowMobile] = useState(false)
                 const [currUser,setCurrUser] = useState({});
                 const [data,setData] = useState([]);
                 const [productData,setProductData] = useState([]);
@@ -83,6 +85,9 @@ export const AppProvider = ({children})=>{
         setShowMobileMenu,
         productData,
         updateProductData,
+        animate,
+        showMobile,
+        setShowMobile,
 
         productInfo,
         getProductInfo

@@ -51,7 +51,7 @@ a {
   max-width: 144rem;
   margin: 0 auto;
   min-height: 100vh;
-  border: 3px dotted black;
+  /* border: 3px dotted black; */
   background: var(--primarybg);
   color: var(--primarycolor);
   font-family: var(--primaryfont);
@@ -65,6 +65,8 @@ a {
   background: var(--primarybg);
   color: var(--primarycolor);
   font-family: var(--primaryfont);
+  position: relative;
+  top: 9rem;
 }
 
 .padding-content-container,

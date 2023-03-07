@@ -3,6 +3,7 @@ import {ProductInfoHeader,Features, Gallery, InBoxList, Recommended} from "./com
 import "./ProductInfo.css"
 import {useAppContext} from "../../context/AppStore"
 import {Link, useParams} from "react-router-dom"
+import { motion } from 'framer-motion'
 
 const ProductInfo = () => {
   const params = useParams();
@@ -15,7 +16,7 @@ const ProductInfo = () => {
   },[productInfo]);
   return  productInfo?.name ?
   (
-    <div className="product-info-container">
+    <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2}}} className="product-info-container">
       <div className="backbtn-div">
         <Link className="go-back-btn" to="/">Go Back</Link>
       </div>
@@ -32,7 +33,7 @@ const ProductInfo = () => {
         <Recommended/>
 
       
-      </div>
+      </motion.div>
   ) : "Loading..."
 }
 

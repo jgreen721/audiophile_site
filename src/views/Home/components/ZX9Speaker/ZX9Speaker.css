@@ -38,7 +38,8 @@
 .zx-img {
   height: 100%;
   width: 100%;
-  opacity: 0;
+  transition: 1s ease;
+  /* opacity: 0; */
 }
 
 .zx-content {
@@ -55,14 +56,18 @@
   margin-top: 2.4rem;
   margin-bottom: 4rem;
   line-height: 2.5rem;
-  opacity: 0;
+  /* opacity: 0; */
+}
+
+.zx-h1 {
+  transition: 0.5s ease;
 }
 
 .zx9-btn {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
-.show {
+/* .show {
   animation: showEls 1s var(--i) forwards;
 }
 
@@ -70,7 +75,7 @@
   100% {
     opacity: 1;
   }
-}
+} */
 
 @media screen and (max-width: 1050px) {
   .svg-circles {
@@ -96,6 +101,10 @@
     margin-right: 0rem;
     margin-bottom: 0rem;
     text-align: center;
+  }
+
+  .zx9-btn {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 550px) {

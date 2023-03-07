@@ -4,6 +4,7 @@
   /* border: 2px solid red; */
   margin-bottom: 20rem;
   display: flex;
+  overflow: hidden;
 }
 
 .bringyou-column {

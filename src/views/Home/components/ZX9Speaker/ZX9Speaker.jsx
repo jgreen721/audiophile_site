@@ -13,18 +13,18 @@ const ZX9Speaker = () => {
             <picture>
       <source media="(min-width:1050px)" srcSet="./assets/home/desktop/image-speaker-zx9.png"/>
       <source media="(min-width:465px)" srcSet="./assets/home/tablet/image-speaker-zx9.png"/>
-      <img style={{"--i":".25s"}} className={inView ? "zx-img show" : "zx-img"} src="./assets/home/mobile/image-speaker-zx9.png" alt="img"/>
+      <img style={{"--i":"0s"}} className={inView ? "zx-img show" : "zx-img no-opacity"} src="./assets/home/mobile/image-speaker-zx9.png" alt="img"/>
             </picture>
         </div>
         <div className="zx-content">
         <header className="zx-header">
-        <h1 className="zx-h1">ZX9</h1>
-        <h1 className="zx-h1">Speaker</h1>
+        <h1 style={{"--i":".25s"}} className={inView ? "zx-h1 slide-center" : "zx-h1 hide-left"}>ZX9</h1>
+        <h1 style={{"--i":".5s"}} className={inView ? "zx-h1 slide-center" : "zx-h1 hide-left"}>Speaker</h1>
         </header>
-        <p style={{"--i":".5s"}} className={inView ? "zx-blurb show" : "zx-blurb"}>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+        <p style={{"--i":".75s"}} className={inView ? "zx-blurb slide-center" : "zx-blurb hide-left"}>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
         <Link to={`/product_info/zx9-speaker`}>
 
-        <button style={{"--i":".75s"}} className={inView ? "btn secondary-btn btn-secondary zx9-btn m-auto show" : "btn secondary-btn btn-secondary m-auto"}>See Product</button>
+        <button style={{"--i":"1s"}} className={inView ? "btn secondary-btn btn-secondary zx9-btn slide-center" : "btn secondary-btn btn-secondary hide-left"}>See Product</button>
         </Link>
 
         </div>

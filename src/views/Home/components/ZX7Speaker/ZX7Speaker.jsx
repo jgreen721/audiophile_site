@@ -15,14 +15,14 @@ const ZX7Speaker = () => {
             <picture>
       <source media="(min-width:850px)" srcSet="./assets/home/desktop/image-speaker-zx7.jpg"/>
       <source media="(min-width:450px)" srcSet="./assets/home/tablet/image-speaker-zx7.jpg"/>
-      <img className={inView ? "zx7-img pop-up" : "zx7-img"} src="./assets/home/mobile/image-speaker-zx7.jpg" alt="img"/>
+      <img style={{"--i":"0s"}} className={inView ? "zx7-img pop-up" : "zx7-img lower-el"} src="./assets/home/mobile/image-speaker-zx7.jpg" alt="img"/>
     </picture>
         </div>
         <div className="zx7-content-overlay">
         <div className="zx7-content">
-        <h2 style={{"--i":"0s"}} className={inView ? "zx7-h1 slide-right" : "zx7-h1"}>ZX7 Speaker </h2>
+        <h2 style={{"--i":".25s"}} className={inView ? "zx7-h1 slide-center" : "zx7-h1 hide-left"}>ZX7 Speaker </h2>
         <Link to={`/product_info/zx7-speaker`}>
-        <button style={{"--i":".5s"}} className={inView ? "btn zx7-btn outline-btn slide-right" : "btn zx7-btn outline-btn"}>See Product</button>
+        <button style={{"--i":".5s"}} className={inView ? "btn zx7-btn outline-btn slide-center" : "btn zx7-btn outline-btn hide-left"}>See Product</button>
         </Link>
         </div>
         </div>

@@ -15,7 +15,7 @@ const MobileMenu = () => {
   return (
     <div className={showMobile ? "mobile-menu" : "mobile-menu hide-mobile-menu"}>
         {items.map(i=>(
-            <motion.div className="item-card" key={i.id} variants={slideLeftVar}>
+            <motion.div className="item-card mobile-item" key={i.id} variants={slideLeftVar}>
                 <Item key={i.id} item={i}/>
             </motion.div>
 

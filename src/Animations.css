@@ -61,7 +61,6 @@
     transform: translateY(0vh);
   }
 }
-
 .animate-app .raise-hide-el {
   position: relative;
   border: 5px dotted peachpuff;
@@ -78,6 +77,27 @@
 @keyframes bring-down {
   100% {
     transform: translateY(0vh);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .animate-app .raise-hide-el {
+    position: relative;
+    border: 5px dotted peachpuff;
+    transform: translateX(100vw);
+  }
+
+  .animate-app .bring-down {
+    position: relative;
+    transform: translateX(100vw);
+
+    animation: popup 1s var(--i) forwards;
+  }
+
+  @keyframes bring-down {
+    100% {
+      transform: translateX(0vh);
+    }
   }
 }
 

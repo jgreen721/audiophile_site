@@ -8,7 +8,7 @@ import { useAppContext } from './context/AppStore'
 import {Items} from "./views/Home/components"
 
 function App() {
-  const {appTheme,animate} = useAppContext();
+  const {appTheme,animate,showMobile} = useAppContext();
   const location = useLocation();
 
   console.log("Location",location);
@@ -19,8 +19,7 @@ function App() {
   return (
     <div data-theme={appTheme} className={animate ? "app animate-app" : "app"}>
                <Navbar/>
-               <div className="app-container">
-               <MobileMenu/>
+               <div className={showMobile ? "app-container opaque" : "app-container"}>
 
 <AnimatePresence>
         <Routes key={location.pathname} location={location}>

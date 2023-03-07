@@ -74,6 +74,25 @@ a {
   padding: 0 16.5rem;
 }
 
+.opaque {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  filter: blur(3px);
+  /* border: 5px solid red; */
+}
+
+.opaque::after {
+  content: "";
+  background: black;
+  height: 100%;
+  width: 100%;
+  opacity: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 h1 {
   font-size: 5.6rem;
   line-height: 5.8rem;

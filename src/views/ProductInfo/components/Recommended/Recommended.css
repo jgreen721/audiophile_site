@@ -11,3 +11,9 @@
 .recommended-list {
   display: flex;
 }
+
+@media screen and (max-width: 550px) {
+  .recommended-list {
+    flex-direction: column;
+  }
+}

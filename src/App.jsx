@@ -1,7 +1,7 @@
 import './App.css'
 import "./Animations.css"
-import {Navbar,BringYou,Footer, MobileMenu} from "./components"
-import {Home,ProductView,ProductInfo} from "./views"
+import {Navbar,BringYou,Footer} from "./components"
+import {Home,ProductView,ProductInfo,Checkout} from "./views"
 import {Routes, Route, useLocation} from "react-router-dom"
 import { AnimatePresence } from 'framer-motion'
 import { useAppContext } from './context/AppStore'
@@ -25,12 +25,13 @@ function App() {
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Home/>}/>
           <Route path="/product_info/:productname" element={<ProductInfo/>}/>
+          <Route path="/checkout" element={<Checkout/>}/>
           <Route path="/:product" element={<ProductView/>}/>
        </Routes>
   </AnimatePresence>
        <div className="padding-container">
-       {location.pathname != "/" && <Items/>}
-        <BringYou/>
+       {location.pathname != "/" || location.pathname != "/checkout" && <Items/>}
+        {location.pathname != "/checkout" && <BringYou/>}
         </div>
         <Footer/>
         </div>

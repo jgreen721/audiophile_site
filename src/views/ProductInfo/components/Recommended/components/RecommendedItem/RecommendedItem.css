@@ -2,6 +2,7 @@
   margin: 0 1.5rem;
   /* border: 2px solid blue; */
   text-align: center;
+  /* height: 26.5rem; */
 }
 
 .rec-img-container {
@@ -16,4 +17,27 @@
 .rec-item-header {
   margin: 3.5rem 0;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 550px) {
+  .recommended-item {
+    margin: 2rem;
+  }
+  .rec-img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lightgray);
+    height: 12rem;
+  }
+  .rec-img {
+    height: 9.5rem;
+    width: 7.5rem;
+  }
+
+  .rec-item-header {
+    margin: 1.8rem 0;
+    font-size: 2.4rem;
+  }
 }

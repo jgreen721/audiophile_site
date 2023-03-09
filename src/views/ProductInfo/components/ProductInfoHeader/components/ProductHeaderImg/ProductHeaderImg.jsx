@@ -5,7 +5,7 @@ import "./ProductHeaderImg.css"
 const ProductHeaderImg = () => {
   const {productInfo} = useAppContext();
 
-  console.log(productInfo);
+  // console.log(productInfo);
   return (
     <div className="product-header-img-container">
       <picture>

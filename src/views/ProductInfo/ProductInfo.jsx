@@ -9,7 +9,7 @@ const ProductInfo = () => {
   const params = useParams();
   const {productInfo,getProductInfo} = useAppContext();
 
-  console.log(params.productname,productInfo);
+  // console.log(params.productname,productInfo);
 
   useEffect(()=>{
     getProductInfo(params.productname)

@@ -3,12 +3,12 @@ import {Link} from "react-router-dom"
 import { useAppContext } from '../../../../../../context/AppStore'
 import "./RecommendedItem.css"
 
-const RecommendedItem = ({item}) => {
+const RecommendedItem = ({item,inView,i}) => {
   const {getProductInfo} = useAppContext();
 
   
   return (
-    <li className="recommended-item">
+    <li style={{"--i":i}} className={inView ?"recommended-item clear-focus" : "recommended-item blur"}>
       <div className="rec-img-container">
       <picture>
   <source media="(min-width:650px)" srcSet={item.image.desktop}/>

@@ -6,25 +6,61 @@
   background: var(--white);
   display: flex;
   flex-direction: row;
-  padding: 5rem 0;
+  padding: 5rem 4rem;
   transition: 0.5s ease;
   left: 0;
+  gap: 1rem;
+  top: -150rem;
+}
+
+.mobile-item-img {
+  height: 10rem;
+  transform: translateY(-3rem);
 }
 
 .mobile-item {
   flex: 1;
+  text-align: center;
+  background: var(--lightgray);
 }
 
-.hide-mobile-menu {
-  top: -150rem;
+.mobile-item-h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mobile-btn,
+.mobile-item-h5 {
+  transform: translateY(-2rem);
+}
+
+@media screen and (max-width: 1050px) {
+  .mobile-menu {
+    top: 10rem;
+    background: radial-gradient(black, white);
+  }
 }
 
 @media screen and (max-width: 550px) {
   .mobile-menu {
-    flex-direction: column;
+    display: block;
+    /* padding: 2rem 2rem; */
+    gap: 0;
   }
 
   .mobile-item {
-    height: 5rem;
+    /* height: 5rem; */
+    margin: 3rem 0;
+    height: 16.5rem;
+    flex: none;
   }
+
+  .mobile-btn {
+    margin: 0 auto;
+  }
+}
+
+.hide-mobile-menu {
+  top: -150rem;
 }

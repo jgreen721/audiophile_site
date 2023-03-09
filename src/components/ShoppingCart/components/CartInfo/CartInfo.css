@@ -1,0 +1,25 @@
+.top-cart-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-h4 {
+  font-size: 1.8rem;
+}
+
+.clear-cart-btn {
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  padding: 0.75rem;
+  border-radius: 10px;
+}
+
+.clear-cart-btn:hover {
+  color: lightgray;
+  padding: 0.75rem;
+}

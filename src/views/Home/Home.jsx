@@ -9,7 +9,7 @@ const Home = () => {
 
 
   return (
-    <motion.div initial={{x:'-100vw'}} animate={{x:'0vw',transition:{duration:2}}}>
+    <motion.div initial={{x:'-100vw'}} animate={{x:'0vw',transition:{duration:1}}}>
       <Hero/>
       <div className="padding-content-container">
       <Items/>

@@ -30,6 +30,13 @@
   animation: slideover 1s var(--i) forwards;
 }
 
+.animate-app .reg-right-slide-center {
+  position: relative;
+  transform: translateX(100vw);
+
+  animation: slideover 1s var(--i) forwards;
+}
+
 .animate-app .right-slide-center {
   position: relative;
   transform: scale(0) translateX(100vw);
@@ -56,11 +63,6 @@
   animation: popup 1s var(--i) forwards;
 }
 
-@keyframes popup {
-  100% {
-    transform: translateY(0vh);
-  }
-}
 .animate-app .raise-hide-el {
   position: relative;
   border: 5px dotted peachpuff;
@@ -70,8 +72,13 @@
 .animate-app .bring-down {
   position: relative;
   transform: translateY(-100vh);
-
   animation: popup 1s var(--i) forwards;
+}
+
+@keyframes popup {
+  100% {
+    transform: translateY(0vh);
+  }
 }
 
 @keyframes bring-down {

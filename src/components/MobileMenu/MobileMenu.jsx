@@ -1,6 +1,6 @@
 import React from 'react'
 import "./MobileMenu.css"
-import Item  from '../../views/Home/components/Items/Item'
+import MobileItem  from './MobileItem'
 import { motion } from 'framer-motion'
 import { slideLeftVar } from '../../variants'
 import { useAppContext } from '../../context/AppStore'
@@ -15,8 +15,8 @@ const MobileMenu = () => {
   return (
     <div className={showMobile ? "mobile-menu" : "mobile-menu hide-mobile-menu"}>
         {items.map(i=>(
-            <motion.div className="item-card mobile-item" key={i.id} variants={slideLeftVar}>
-                <Item key={i.id} item={i}/>
+            <motion.div className="mobile-item" key={i.id} variants={slideLeftVar}>
+                <MobileItem key={i.id} item={i} isMobile={true}/>
             </motion.div>
 
         ))}

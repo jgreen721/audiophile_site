@@ -4,9 +4,21 @@
   padding: 3.5rem 10%; */
   position: fixed;
   width: 100%;
+  max-width: 144rem;
   z-index: 15;
+  transition: 1s ease;
+  animation: dropdown 1s forwards;
 
   /* padding-top: 3.5rem; */
+}
+
+@keyframes dropdown {
+  0% {
+    top: -50rem;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 .nav-content {
@@ -60,7 +72,7 @@
 
 .burger-div {
   position: relative;
-  transform: translateX(-20rem);
+  transform: translateX(-100rem);
   transition: 0.3s ease;
 }
 
@@ -188,6 +200,10 @@
     padding: 3.2rem 4rem;
   }
 
+  .nav-padding-line {
+    padding: 0 4rem;
+  }
+
   .burger-div {
     transform: translateX(0);
     margin-right: 3rem;
@@ -201,6 +217,10 @@
 @media screen and (max-width: 450px) {
   .nav-content {
     padding: 3.2rem 2.4rem;
+  }
+
+  .nav-padding-line {
+    padding: 0 2.4rem;
   }
 
   .nav-logo-div {

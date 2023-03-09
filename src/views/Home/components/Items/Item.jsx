@@ -1,16 +1,16 @@
 import React from 'react'
-import {motion} from "framer-motion"
+// import {motion} from "framer-motion"
 import {Link} from "react-router-dom"
-import { useAppContext } from '../../../../context/AppStore'
+// import { useAppContext } from '../../../../context/AppStore'
 
 
 const Item = ({item}) => {
-  const {updateProductData} = useAppContext()
+  // const {updateProductData} = useAppContext()
 
   // console.log(item)
 
   return (
-    <div className="item-card-content">
+    <div className= "item-card-content">
         <img className="item-img" src={item.img} alt="item-img" />
         <h5 className="item-h5">{item.name}</h5>
         <Link to={`/${item.name.toLowerCase()}`}>

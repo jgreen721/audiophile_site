@@ -9,6 +9,14 @@
 .go-back-btn {
   color: var(--primarycolor);
   font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.go-back-btn:hover {
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-shadow: 5px 10px 20px black;
 }
 
 .features-box-row {

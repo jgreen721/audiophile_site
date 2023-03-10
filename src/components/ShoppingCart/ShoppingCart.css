@@ -53,3 +53,19 @@
 .hide-cart {
   transform: scale(0) translateX(100vw);
 }
+
+@media screen and (max-width: 1050px) {
+  .cart-container {
+    padding-right: 2rem;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cart-container {
+    padding-right: 0rem;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid red; */
+  }
+}

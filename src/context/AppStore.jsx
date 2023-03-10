@@ -85,7 +85,7 @@ export const AppProvider = ({children})=>{
                         temp.push(item);
                     }
                     else{
-                        temp[idx].quantity += parseInt(item.quantity);
+                        temp[idx].quantity = item.quantity
                         setCartData(temp);
                     }
 
@@ -134,7 +134,7 @@ export const AppProvider = ({children})=>{
                     if(!e.target.closest(".cart-card") && showCart){
                         setShowCart(false);
                     }
-                    console.log(e.target)
+                    // console.log(e.target)
                     if(!e.target.closest(".mobile-menu") && showMobile){
                         setShowMobile(false);
                     }

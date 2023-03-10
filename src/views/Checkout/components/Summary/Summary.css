@@ -1,0 +1,59 @@
+.summary-card {
+  background: var(--primarybg);
+  padding: 3.2rem;
+  border-radius: 8px;
+}
+
+.summary-header {
+  text-transform: uppercase;
+}
+
+.summary-value,
+.summary-category {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.summary-category {
+  opacity: 50%;
+}
+
+.summary-value {
+  font-weight: 800;
+}
+
+.summary-flex {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.summary-img-div {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+
+.summary-img {
+  height: 100%;
+  width: 100%;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.summary-quantity {
+  font-size: 1.5rem;
+  opacity: 75%;
+}
+
+.summary-btn {
+  width: 100%;
+  margin: 1.5rem 0;
+}

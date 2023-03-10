@@ -1,0 +1,8 @@
+@media screen and (max-width: 550px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .empty-col {
+    display: none;
+  }
+}

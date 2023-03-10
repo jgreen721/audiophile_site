@@ -20,6 +20,7 @@ export const AppProvider = ({children})=>{
                 const [cartData,setCartData] = useState([]);
                 const [cartTotal,setCartTotal] = useState(0)
                 const [showCart, setShowCart] = useState(false);
+                const [showThanks, setShowThanks] = useState(false);
                 // const [showMobileMenu, setShowMobileMenu] = useState(false)
 
 
@@ -163,6 +164,8 @@ export const AppProvider = ({children})=>{
         adjustQuantity,
         showCart,
         setShowCart,
+        showThanks,
+        setShowThanks,
         productInfo,
         getProductInfo
     }

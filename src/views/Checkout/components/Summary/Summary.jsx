@@ -5,7 +5,14 @@ import {formatPrice} from "../../../../utils/formatPrice"
 import {useAppContext} from "../../../../context/AppStore"
 
 const Summary = () => {
-    const {cartData,cartTotal} = useAppContext()
+    const {cartData,setShowThanks,cartTotal} = useAppContext()
+
+
+    const confirmDetails=()=>{
+        //Implement form validation logic
+
+        setShowThanks(true)
+    }
   return (
     <div className="summary-card">
         <h5 className="summary-header">Summary </h5>
@@ -32,7 +39,7 @@ const Summary = () => {
                 <h5 className="summary-value tan">${formatPrice(cartTotal + 50)}</h5>
             </div>
         </div>
-        <button className="btn primary-btn summary-btn">Continue & Pay</button>
+        <button onClick={confirmDetails} className="btn primary-btn summary-btn">Continue & Pay</button>
         </div>
   )
 }

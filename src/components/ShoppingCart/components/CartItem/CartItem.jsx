@@ -5,7 +5,7 @@ import { useAppContext } from '../../../../context/AppStore'
 
 const CartItem = ({item}) => {
   const {adjustQuantity} = useAppContext()
-  console.log("Item",item)
+  // console.log("Item",item)
   return (
     <li className="cart-item">
       <div className="cart-column">

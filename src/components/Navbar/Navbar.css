@@ -195,6 +195,64 @@
   transform: scale(1.25) translateX(-0.5rem) rotate(-16deg);
 }
 
+.cart-options-div {
+  position: relative;
+}
+
+.site-options-icon {
+  color: var(--secondarycolor);
+  position: absolute;
+  /* right: 2rem; */
+  /* right: 5rem;
+  top: 2rem; */
+  font-size: 2rem;
+  left: 0.75rem;
+  cursor: pointer;
+}
+
+.site-options-div {
+  background: var(--tertiarybg);
+  color: var(--primarycolor);
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  position: absolute;
+  right: 0rem;
+  top: 7rem;
+  transition: 0.2s ease;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+}
+
+.option-row * {
+  margin: 0 2.5rem;
+}
+
+.hide-options-div {
+  right: -100rem;
+  transition: 0.2s ease;
+}
+
+.options-p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.option-btn {
+  background: transparent;
+  padding: 0.35rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.option-btn:hover {
+  background: lightgray;
+}
+
 @media screen and (max-width: 1050px) {
   .nav-content {
     padding: 3.2rem 4rem;

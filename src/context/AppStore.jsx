@@ -13,6 +13,7 @@ export const AppProvider = ({children})=>{
                 const [appTheme,setAppTheme] = useState("light")
                 const [animate,setAnimate] = useState(true)
                 const [showMobile,setShowMobile] = useState(false)
+                const [showOptions, setShowOptions] = useState(false)
                 const [currUser,setCurrUser] = useState({});
                 const [data,setData] = useState([]);
                 const [productData,setProductData] = useState([]);
@@ -22,6 +23,9 @@ export const AppProvider = ({children})=>{
                 const [showCart, setShowCart] = useState(false);
                 const [showThanks, setShowThanks] = useState(false);
                 // const [showMobileMenu, setShowMobileMenu] = useState(false)
+
+              
+
 
 
 
@@ -141,6 +145,21 @@ export const AppProvider = ({children})=>{
                     }
                 }
 
+
+                const validateInputs=(formRef)=>{
+                console.log("validateInputs fired!")
+                let isError = false;
+                formRef.current.querySelectorAll('.form-div').forEach(div=>{
+                    if(div.querySelector("input").value === ""){
+                        isError = true;
+                            div.querySelector(".form-error").classList.remove("hide-error")
+                            div.querySelector("input").classList.add("error-border")
+                }
+
+                })
+                if(!isError)setShowThanks(true);
+            }
+
                 
 
 
@@ -154,9 +173,12 @@ export const AppProvider = ({children})=>{
         productData,
         updateProductData,
         animate,
+        setAnimate,
         showMobile,
         removeMenus,
         setShowMobile,
+        showOptions,
+        setShowOptions,
         addToCart,
         clearCart,
         cartData,
@@ -167,7 +189,9 @@ export const AppProvider = ({children})=>{
         showThanks,
         setShowThanks,
         productInfo,
-        getProductInfo
+        getProductInfo,
+        validateInputs,
+        
     }
 
     return (<AppContext.Provider value={values}>

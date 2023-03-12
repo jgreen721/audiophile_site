@@ -32,8 +32,8 @@ const PaymentDetails = () => {
   </div>
 </div>
 <div className="payment-row">
-  <FormDiv label="e-Money Number" placeholder="238521993"/>
-  <FormDiv label="e-Money Pin" placeholder="6891"/>
+  <FormDiv label="e-Money Number" dictionary="emoneyplan" placeholder="238521993"/>
+  <FormDiv label="e-Money Pin" dictionary="emoneypin" placeholder="6891"/>
 </div>
     </div>
   )

@@ -7,10 +7,10 @@ const BillingDetails = () => {
     <div className="billing-form-container details-container">
       <h4 className="tan form-header">Billing Details </h4>
       <div className="form-row">
-        <FormDiv label="Name" placeholder="Alexel Ward"/>
-        <FormDiv label="Email Address" placeholder="alexei@mail.com"/>
+        <FormDiv label="Name" dictionary="username" placeholder="Alexel Ward"/>
+        <FormDiv label="Email Address" dictionary="email" placeholder="alexei@mail.com"/>
       </div>
-      <FormDiv label="Phone Number" placeholder="+1 202-555-0136"/>
+      <FormDiv label="Phone Number" dictionary="phone" placeholder="+1 202-555-0136"/>
 
       </div>
   )

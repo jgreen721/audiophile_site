@@ -5,7 +5,7 @@ import "./FormDiv.css"
 const FormDiv = ({label,placeholder,dictionary}) => {
   const formRef = useRef();
 
-  console.log(label)
+  // console.log(label)
 
   const removeErrors=()=>{
       formRef.current.querySelector(".form-control").classList.remove("error-border")

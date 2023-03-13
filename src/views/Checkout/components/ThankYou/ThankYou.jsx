@@ -4,7 +4,7 @@ import { useAppContext } from '../../../../context/AppStore';
 import "./ThankYou.css"
 
 const ThankYou = () => {
-  const {showThanks,cartData,cartTotal } = useAppContext();
+  const {showThanks,cartData,cartTotal,clearCart } = useAppContext();
 
   console.log(cartData )
   return (
@@ -37,7 +37,7 @@ const ThankYou = () => {
       </div>
     </div>
     <Link to="/">
-    <button className="btn primary-btn thanks-btn">Back to Home</button>
+    <button onClick={clearCart} className="btn primary-btn thanks-btn">Back to Home</button>
     </Link>
       </div>
     </div>

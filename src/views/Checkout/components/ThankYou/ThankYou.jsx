@@ -17,17 +17,21 @@ const ThankYou = () => {
     <p className="confirmation-p">You will receieve an email confirmation shortly.</p>
     <div className="order-confirm-summary">
       <div className="order-confirm-col">
-        <div className="order-item">
+     
+
+      <div className="order-item">
           <div className="order-img-col">
-            <img className="order-item-img" src={cartData[0].img} alt="" />
+            <img className="order-item-img" src={cartData[0]?.img} alt="" />
           </div>
           <div>
-            <p className="checkout-item-name">{cartData[0].name}</p>
-            <p className="checkout-item-price">${cartData[0].price}</p>
+            <p className="checkout-item-name">{cartData[0]?.name}</p>
+            <p className="checkout-item-price">${cartData[0]?.price}</p>
           </div>
-          <p> x{cartData[0].quantity}</p>
-          <div>
-          </div>
+          <p> x{cartData[0]?.quantity}</p>
+          {/* <div>
+      
+          </div> */}
+      
         </div>
         {cartData.length > 1 && <p className="additional-blurb" style={{textAlign:'center'}}> and {cartData.length -1} other item(s)</p>}
       </div>

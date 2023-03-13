@@ -32,12 +32,12 @@
   text-transform: uppercase;
   text-shadow: 1px 1px 22px var(--lightblack);
   transition: 2s ease;
-  transform: translateY(-15rem);
+  /* transform: translateY(-15rem); */
 }
 
-.slidedown-yx {
+/* .slidedown-yx {
   transform: translateY(0rem);
-}
+} */
 
 .slidedown {
   /* transition: 2s ease;

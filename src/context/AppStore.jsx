@@ -11,6 +11,7 @@ export const useAppContext = ()=>useContext(AppContext);
 
 export const AppProvider = ({children})=>{
                 const [appTheme,setAppTheme] = useState("light")
+                const [hasCookies,setHasCookies] = useState(true)
                 const [animate,setAnimate] = useState(true)
                 const [showMobile,setShowMobile] = useState(false)
                 const [showOptions, setShowOptions] = useState(false)
@@ -160,6 +161,21 @@ export const AppProvider = ({children})=>{
                 if(!isError)setShowThanks(true);
             }
 
+
+            const toggleCookies = ()=>{
+                setHasCookies(!hasCookies)
+                if(hasCookies){
+                    console.log('create cookies')
+                    document.cookie = `app-mode=${appTheme}`
+                    document.cookie = `animations=${animate ? "On" : "Off"}`
+                }
+                else{
+                    console.log("clear cookies")
+                    document.cookie = "app-mode=;max-age=-999999"
+                    document.cookie = "animations=;max-age=-999999"
+                }
+            }
+
                 
 
 
@@ -168,6 +184,8 @@ export const AppProvider = ({children})=>{
     const values={
         currUser,
         appTheme,
+        setAppTheme,
+        toggleCookies,
         // showMobileMenu,
         // setShowMobileMenu,
         productData,

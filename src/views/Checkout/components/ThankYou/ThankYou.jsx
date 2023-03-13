@@ -4,7 +4,9 @@ import { useAppContext } from '../../../../context/AppStore';
 import "./ThankYou.css"
 
 const ThankYou = () => {
-  const {showThanks} = useAppContext();
+  const {showThanks,cartData,cartTotal } = useAppContext();
+
+  console.log(cartData )
   return (
     <div className={showThanks ? "thankyou-parent" : "thankyou-parent hide-thanks"}>
       <div className="thankyou-card">
@@ -13,6 +15,27 @@ const ThankYou = () => {
         </div>
         <h2 className="h2 thankyou-header">Thank you for your order</h2>
     <p className="confirmation-p">You will receieve an email confirmation shortly.</p>
+    <div className="order-confirm-summary">
+      <div className="order-confirm-col">
+        <div className="order-item">
+          <div className="order-img-col">
+            <img className="order-item-img" src={cartData[0].img} alt="" />
+          </div>
+          <div>
+            <p className="checkout-item-name">{cartData[0].name}</p>
+            <p className="checkout-item-price">${cartData[0].price}</p>
+          </div>
+          <p> x{cartData[0].quantity}</p>
+          <div>
+          </div>
+        </div>
+        {cartData.length > 1 && <p className="additional-blurb" style={{textAlign:'center'}}> and {cartData.length -1} other item(s)</p>}
+      </div>
+      <div className="order-confirm-col grand-total-col">
+        <h4 className="total-header">Grand Total</h4>
+        <h4 className="total">${cartTotal}</h4>
+      </div>
+    </div>
     <Link to="/">
     <button className="btn primary-btn thanks-btn">Back to Home</button>
     </Link>

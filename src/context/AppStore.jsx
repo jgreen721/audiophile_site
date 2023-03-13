@@ -164,7 +164,7 @@ export const AppProvider = ({children})=>{
 
             const toggleCookies = ()=>{
                 setHasCookies(!hasCookies)
-                if(hasCookies){
+                if(!hasCookies){
                     console.log('create cookies')
                     document.cookie = `app-mode=${appTheme}`
                     document.cookie = `animations=${animate ? "On" : "Off"}`
@@ -186,6 +186,7 @@ export const AppProvider = ({children})=>{
         appTheme,
         setAppTheme,
         toggleCookies,
+        hasCookies,
         // showMobileMenu,
         // setShowMobileMenu,
         productData,

@@ -253,6 +253,10 @@
   background: lightgray;
 }
 
+.highlight-cart path {
+  fill: orange;
+}
+
 @media screen and (max-width: 1050px) {
   .nav-content {
     padding: 3.2rem 4rem;
